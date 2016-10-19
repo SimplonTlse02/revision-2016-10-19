@@ -24,6 +24,10 @@
       console.log(this);
       this.tempsTotalSeconds --;
       console.log("tempsTotalSeconds: ", this.tempsTotalSeconds);
+
+      if(this.tempsTotalSeconds <= 0){
+        $("#progressBar").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/3qvlVaI4RwI" frameborder="0" allowfullscreen></iframe>');
+      }
     },
     show: function(){
       console.log("Show", this.tempsTotalSeconds);
